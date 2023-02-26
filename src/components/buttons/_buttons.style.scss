@@ -1,0 +1,46 @@
+.btn-log {
+  width: 40px;
+  height: 40px;
+  margin: 0 0 0 35px;
+  border-radius: 100%;
+  background-color: $color_green;
+  color: $color_white;
+  font-size: 20px;
+  @include display-flex(row, center, center);
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: #053f39;
+    transition: $transition;
+  }
+
+  &:active {
+    transform: scale(1);
+    background-color: $color_green;
+    transition: $transition;
+  }
+}
+
+.btn-log__ico {
+  width: 24px;
+  height: 24px;
+  background-image: url('assets/ico/ico_user.png');
+}
+
+.btn-log_active {
+  border: 2px solid $color_gray;
+}
+
+.btn-log__ico_user-ico {
+  background-image: none;
+  @include display-flex(row, center, center);
+  text-transform: uppercase;
+}
+
+@media (max-width: 490px) {
+
+  .btn-log {
+    margin: 0 0 0 15px;
+  }
+
+}
